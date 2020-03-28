@@ -10,8 +10,8 @@ Firebase Usage Monitor is a scrapper that uses [Firebase Profiling](https://fire
 
 By now, the script keeps track of 2 specs:
 
-- Unindexed Queries
-- Response Latency 
+- Unindexed Queries: If any unindexed query happens while the Monitor is running, you'll get a Slack message.
+- Response Latency: If any response has higher latency then the provided threshold, you'll get a Slack message.
 
 ---
 
@@ -52,12 +52,12 @@ There you'll find all your projects, each one with their name subtitled.
 
 #### :key: How to get the Firebase token? (`firebaseToken`)
 
-First you'll need to login firebase in terminal, asking for a token.
+First you'll need to log in Firebase in terminal, asking for a token.
 
 `firebase login:ci`
 
-Then, access the URL provided and log in to your google account.
-If everything went fine, you'll get a firebase token:
+Then, access the URL provided and log in to your Google account.
+If everything went fine, you'll get a Firebase token:
 
 ```
 ✔  Success! Use this token to login on a CI server:
